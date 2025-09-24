@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure proper spacing for fixed navbar */
+body {
+  scroll-padding-top: 100px;
+}
