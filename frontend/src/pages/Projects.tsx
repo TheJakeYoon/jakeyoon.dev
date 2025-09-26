@@ -3,6 +3,8 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import IconButton from '@mui/material/IconButton';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Projects() {
     return (
@@ -72,12 +74,26 @@ function Projects() {
                                 cryptominer
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                - Built an automated trading system in Python using Alpaca, Polygon.io APIs and GCP Linux server.
-                                <br/>
-                                - Analyzed historical stock data to find trends and patterns using Matplotlib and Pandas library.
+                                - Built an Ethereum mining rigs from ground up to maximize computer performance for mining using several parallel GPUs and different operating systems for diversification.
                             </Typography>
                         </CardContent>
                     </Card>
+                </Box>
+                <Box sx={{ display: 'flex', justifyContent: 'center', mt: 6 }}>
+                    <IconButton 
+                        onClick={() => window.open('https://github.com/thejakeyoon', '_blank')}
+                        sx={{ 
+                            color: 'text.primary',
+                            '&:hover': {
+                                color: 'primary.main',
+                                transform: 'scale(1.1)'
+                            },
+                            transition: 'all 0.2s ease-in-out'
+                        }}
+                        aria-label="Visit GitHub profile"
+                    >
+                        <GitHubIcon sx={{ fontSize: '2rem' }} />
+                    </IconButton>
                 </Box>
             </Container>
         </Box>
