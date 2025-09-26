@@ -1,4 +1,3 @@
-import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import AppTheme from './theme/AppTheme';
 import Home from './pages/Home'

@@ -1,4 +1,3 @@
-import * as React from 'react';
 import logo from '../assets/developer.png';
 import { Box, Typography } from '@mui/material';
 
